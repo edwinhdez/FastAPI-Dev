@@ -52,7 +52,7 @@ class Person(BaseModel):
                 "last_name" : "Hernandez",
                 "age" : 21,
                 "hair_color" : "blonde",
-                "is_married" : False 
+                "is_married" : False
             }
         }
 
