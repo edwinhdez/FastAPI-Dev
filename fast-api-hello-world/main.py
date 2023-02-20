@@ -45,6 +45,17 @@ class Person(BaseModel):
     hair_color: Optional[HairColor] = Field(default=None)
     is_married: Optional[bool] = Field(default=None)
 
+    class Config:
+        schema_extra = {
+            "Edwin": {
+                "first_name" : "Edwin",
+                "last_name" : "Hernandez",
+                "age" : 21,
+                "hair_color" : "blonde",
+                "is_married" : False
+            }
+        }
+
 @app.get("/")
 def home():
     return {"hello" : "world"}
